@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emil Voss, design engineer</title>
+<meta name="description" content="Emil Voss is a design engineer in Copenhagen who builds the parts of a product people touch.">
+<script>
+// Adds .motion only when JS runs and motion is welcome. Without it the page is a complete static page.
+document.documentElement.classList.add(matchMedia('(prefers-reduced-motion: reduce)').matches ? 'static' : 'motion');
+</script>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="pill">
+    <a class="home" href="#top" aria-label="Emil Voss, back to top">
+      <span class="avatar">EV<img src="img/portrait.webp" alt="" width="1000" height="1250"></span>
+      <span class="who">Emil Voss</span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <span class="marker" aria-hidden="true"></span>
+      <a href="#work" data-roll data-spy>Work</a>
+      <a href="#about" data-roll data-spy>About</a>
+      <a href="#contact" data-roll data-spy>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <h1 class="name" aria-label="Emil Voss" data-fit>
+      <span class="w" data-chars>Emil</span>
+      <span class="slot">
+        <span class="portrait"><img src="img/portrait.webp" alt="Portrait of Emil Voss" width="1000" height="1250"></span>
+      </span>
+      <span class="w" data-chars>Voss</span>
+    </h1>
+    <div class="hero-foot">
+      <p class="lede">Design engineer in Copenhagen. I build the parts of a product people touch.</p>
+      <div class="hero-act">
+        <a class="btn mag" href="mailto:hello@emilvoss.example"><span>Start a project</span></a>
+        <span class="status"><i></i>Taking on new work</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="say" id="about">
+    <p data-words>Product teams call me when the prototype looks right and the real thing does not. I work between the design file and the codebase, and I stay until the two agree.</p>
+  </section>
+
+  <section class="work" id="work">
+    <div class="work-head"><h2>Selected work</h2></div>
+    <ul class="grid">
+      <li class="item">
+        <a href="https://example.com/">
+          <div class="win"><div class="win-in"><img src="mocks/kiln-cover.webp" alt="Kiln build dashboard" width="1200" height="900"></div></div>
+          <div class="cap"><h3>Kiln</h3><p>Making a build log worth reading</p><span>2026</span></div>
+        </a>
+      </li>
+      <li class="item">
+        <a href="https://example.com/">
+          <div class="win"><div class="win-in"><img src="mocks/tidewell-cover.webp" alt="Tidewell tide app on three phones" width="1200" height="900"></div></div>
+          <div class="cap"><h3>Tidewell</h3><p>Tide tables for people on boats</p><span>2025</span></div>
+        </a>
+      </li>
+      <li class="item">
+        <a href="https://example.com/">
+          <div class="win"><div class="win-in"><img src="mocks/softback-cover.webp" alt="Softback reading app on three phones" width="1200" height="900"></div></div>
+          <div class="cap"><h3>Softback</h3><p>A reading app that stays out of the way</p><span>2025</span></div>
+        </a>
+      </li>
+      <li class="item">
+        <a href="https://example.com/">
+          <div class="win"><div class="win-in"><img src="mocks/orrery-cover.webp" alt="Orrery team calendar" width="1200" height="900"></div></div>
+          <div class="cap"><h3>Orrery</h3><p>A week view for teams across time zones</p><span>2024</span></div>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's build the real thing.</h2>
+    <div class="contact-act">
+      <a class="btn mag" href="mailto:hello@emilvoss.example"><span>Start a project</span></a>
+      <button class="copy" type="button" data-copy="hello@emilvoss.example"><span class="copy-a">hello@emilvoss.example</span><span class="copy-b" aria-live="polite">Copied</span></button>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="https://github.com/" data-roll>GitHub</a>
+    <a href="https://www.linkedin.com/" data-roll>LinkedIn</a>
+    <a href="https://dribbble.com/" data-roll>Dribbble</a>
+    <span>Copenhagen</span>
+  </div>
+  <p class="more">This is Voss Lite. The full theme adds the project windows assembling as you scroll, case studies with animated page transitions, six colour palettes, and Work, About and Notes pages. <a href="https://mikesmithdesign.co.uk/themes/voss/">See the full Voss theme</a></p>
+  <div class="foot-name" data-fit aria-hidden="true"><span class="w">Emil Voss</span></div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
